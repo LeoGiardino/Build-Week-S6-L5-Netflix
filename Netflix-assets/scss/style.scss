@@ -1,0 +1,236 @@
+/* STYLE SCSS */
+* {
+    background-color: rgb(27, 27, 27);
+    color: white; 
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+// --- NAVBAR ---
+
+.collapse ul li > a{
+    color: white;
+}
+
+
+// --- FILTRI ---
+
+.filtri div {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        padding: 0.3em 1.2em;
+        font-size: 1em;
+    }
+
+    .col-1 {
+        justify-content: end;
+       
+    }
+
+    .col-1:last-child {
+        justify-content: start;
+    }
+    .col-7 {
+        justify-content: flex-start;
+    }
+
+}
+
+
+// --- GRIGLIA ---
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+h1 {
+  font-family: Arial;
+  color: red;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+    
+    .item {
+      padding: 0 2px;
+      transition: $duration all;
+      
+      &:hover { 
+        margin: 0 40px;
+        transform: scale(1.2);
+      }
+      
+    }
+    
+    a {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+      
+      &:nth-of-type(1) {
+        top:0; bottom:0; left:0;
+        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      &:nth-of-type(2) {
+        top:0; bottom:0; right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      
+    }
+    
+  }
+}
+
+
+// --- FOOTER ---
+
+footer {
+    //padding: 0 15rem;
+
+   
+    a {
+        color: rgb(137, 137, 137);
+        text-decoration: none;
+    }
+
+    p {
+        color: rgb(137, 137, 137);
+    }
+
+}
+.icone {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    
+
+    i {
+        font-size: 2em;
+        color: rgb(137, 137, 137);
+    }
+}
+
+.btnFooter {
+    color: #898989 !important;
+}
+
+// ---- PROFILO CSS ----
+
+
+.griglia1 {
+    display: flex;
+}
+
+.foto {
+    width: 35%;
+
+    div {
+
+        width: 170px;
+        height: 170px;
+        border: 1px solid white;
+        border-radius: 20px;
+        position: relative;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        
+    }
+
+    i {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+    }
+}
+.testo {
+    width: 60%;
+    
+    .primoBlock {
+        justify-content: space-evenly;
+
+        input {
+            background-color: rgb(137, 137, 137);
+        }
+
+        ::-webkit-input-placeholder { /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        label {
+            color: rgb(137, 137, 137);
+            font-size: 1.5em;
+        }
+    }
+
+    label {
+        color: rgb(137, 137, 137);
+        font-size: 1.5em;
+    }
+
+    .btn1 {
+        width: 70%;
+    }
+
+    .btn2 {
+        width: 25%;
+    }
+
+    .terzoBlock {
+        div {
+            width: 100%;
+        }
+         p {
+            font-size: 1em;
+        }
+
+        i {
+            color: rgb(137, 137, 137);
+        }
+    }
+
+    
+}
+
+.bottoni {
+    padding: 10px;
+
+    button {
+        padding: 10px 50px;
+        font-size: 1.4em;
+    }
+}
