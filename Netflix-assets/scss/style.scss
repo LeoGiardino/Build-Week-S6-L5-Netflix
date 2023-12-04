@@ -14,8 +14,16 @@ body {
     color: white;
 }
 
+.navbar-toggler {
+    background-color: red;
+}
+
 
 // --- FILTRI ---
+
+.filtri p{
+    font-size: 2.3em;
+}
 
 .filtri div {
     
@@ -48,18 +56,9 @@ $duration: 250ms;
 
 html {
   scroll-behavior: smooth;
+  background-color: rgb(27, 27, 27);
 }
 
-body {
-  margin: 0;
-  background-color: #000;
-}
-
-h1 {
-  font-family: Arial;
-  color: red;
-  text-align: center;
-}
 
 .wrapper {
   display: grid;
@@ -73,6 +72,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin: 20px 0;
+    
     
     .item {
       padding: 0 2px;
@@ -115,7 +115,7 @@ h1 {
 
 footer {
     //padding: 0 15rem;
-
+    background-color: rgb(27, 27, 27);
    
     a {
         color: rgb(137, 137, 137);
@@ -129,8 +129,8 @@ footer {
 }
 .icone {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+
+   
     
 
     i {
